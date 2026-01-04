@@ -20,7 +20,7 @@ class _AuthPageState extends State<AuthPage> {
 
     // Choose endpoint based on mode
     final endpoint = isLogin ? "login.php" : "signup.php";
-    final url = Uri.parse("http://localhost/movies_backend/api/$endpoint");
+    final url = Uri.parse("https://moviebox-3g8b.onrender.com/$endpoint");
 
     try {
       final response = await http.post(
