@@ -2,7 +2,7 @@
 header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Content-Type"); // Required for some Flutter http clients
-require_once "../config/database.php";
+require_once "database.php";
 
 $data = json_decode(file_get_contents("php://input"));
 

@@ -1,7 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
-require_once "../config/database.php";
+require_once "database.php";
 
 $category = $_GET['category'] ?? '';
 $excludeId = (int)($_GET['exclude_id'] ?? 0);
